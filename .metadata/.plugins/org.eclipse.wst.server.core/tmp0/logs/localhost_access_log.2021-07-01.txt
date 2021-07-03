@@ -60,3 +60,4 @@
 0:0:0:0:0:0:0:1 - - [01/Jul/2021:21:47:34 +0900] "GET /BBS/css/bootstrap.css HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [01/Jul/2021:21:47:35 +0900] "GET /BBS/js/bootstrap.js HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [01/Jul/2021:21:47:50 +0900] "GET /BBS/login.jsp HTTP/1.1" 200 2170
+0:0:0:0:0:0:0:1 - - [01/Jul/2021:23:40:40 +0900] "POST /BBS/loginAction.jsp HTTP/1.1" 404 807
