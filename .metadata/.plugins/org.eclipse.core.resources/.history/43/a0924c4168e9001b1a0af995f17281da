@@ -1,0 +1,26 @@
+package bbs;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class BbsDAO {
+	
+	private Connection conn; // 데이터베이스에 접근하게 해주는 하나의 객체
+	private PreparedStatement pstmt;  
+	private ResultSet rs; 
+	
+	// 실제로 데이터베이스에 접근해서 어떠한 데이터를 가져오거나 데이터를 넣는 역할을 하는 데이터 접근 객체
+	public BbsDAO() { // 생성자
+		try {
+			String dbURL = "jdbc:mysql://localhost:3307/BBS"; // 내 컴퓨터에 설치된 mysql 서버
+			String dbID = "root";
+			String dbPassword = "Dbsdk2631!";
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
+		} catch (Exception e) {
+			e.printStackTrace(); // 오류가 나면 무엇인지 출력해주도록 설정
+		}
+	}
+}
